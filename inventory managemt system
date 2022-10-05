@@ -1,0 +1,36 @@
+##inventory management system
+product_details={101:{'product_name':'pen','price':20,'category':'stationary','quantity':10,'brand':'cello','date':'1/10/22'},
+                 102:{'product_name':'shampoo','price':10,'category':'beauty','quantity':20,'brand':'head and shoulder','date':'2/10/22'},
+                 103:{'product_name':'chocalates','price':30,'category':'food','quantity':20,'brand':'Dairy milk','date':'2/10/22'},
+                 104:{'product_name':'Book','price':60,'category':'stationary','quantity':40,'brand':'Classmate','date':'3/10/22'},
+                 105:{'product_name':'apple','price':45,'category':'fruits','quantity':40,'brand':'fruits','date':'6/10/22'},
+                 106:{'product_name':'paste','price':60,'category':'grocerry','quantity':40,'brand':'colgate','date':'4/10/22'},
+                 107:{'product_name':'capsium','price':37,'category':'grocery','quantity':40,'brand':'red,green','date':'4/10/22'},
+                 108:{'product_name':'sari','price':200,'category':'outfit','quantity':30,'brand':'cotton','date':'5/10/22'}}
+product_details
+
+product_no = int(input('Enter the product id: '))
+
+print('-'*30)
+print(product_details[product_no]['product_name'])
+print(product_details[product_no]['price'])
+print(product_details[product_no]['category'])
+print(product_details[product_no]['brand'])
+print(product_details[product_no]['date'])
+print('-'*30)
+
+##add new product id and details
+product_no    = int(input('product id       : '))
+product_name  = str(input('product_name  : '))
+price        = int(input('price    : '))
+category    = str(input('category : '))
+brand       = str(input('brand    : '))
+date        = str(input('date       : '))
+
+
+temp = {}
+temp['product_name'] = product_name
+temp['price'] = price
+temp['category'] = category 
+temp['brand'] = brand
+temp['date'] = date
